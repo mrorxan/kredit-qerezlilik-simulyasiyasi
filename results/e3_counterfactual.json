@@ -1,0 +1,61 @@
+{
+  "summary": {
+    "approve_if_B": {
+      "mean": 0.12100250000000001,
+      "ci95": 0.006060508542975059
+    },
+    "approve_if_A": {
+      "mean": 0.45253000000000004,
+      "ci95": 0.003794181025007415
+    },
+    "flip_share": {
+      "mean": 0.332715,
+      "ci95": 0.005077602204729482
+    },
+    "flip_share_among_good": {
+      "mean": 0.388032831593507,
+      "ci95": 0.005949052876906117
+    },
+    "mean_score_drop": {
+      "mean": 0.11998822071989149,
+      "ci95": 0.002269497609433555
+    }
+  },
+  "example": {
+    "features_as_A": {
+      "log_income": 7.293,
+      "debt_to_income": 0.35,
+      "credit_history_years": 6.242,
+      "late_payments": 1.0,
+      "employment_years": 10.239,
+      "zone_code": -0.283
+    },
+    "features_as_B": {
+      "log_income": 7.113,
+      "debt_to_income": 0.392,
+      "credit_history_years": 5.282,
+      "late_payments": 1.0,
+      "employment_years": 10.239,
+      "zone_code": 1.317
+    },
+    "score_as_A": 0.8999749027842638,
+    "score_as_B": 0.6666080927783121,
+    "shap_as_A": {
+      "log_income": 0.51,
+      "debt_to_income": -0.036,
+      "credit_history_years": 0.156,
+      "late_payments": 0.145,
+      "employment_years": 0.164,
+      "zone_code": 0.144
+    },
+    "shap_as_B": {
+      "log_income": 0.191,
+      "debt_to_income": -0.057,
+      "credit_history_years": -0.056,
+      "late_payments": 0.087,
+      "employment_years": 0.117,
+      "zone_code": -0.703
+    },
+    "y_true": 1
+  }
+}

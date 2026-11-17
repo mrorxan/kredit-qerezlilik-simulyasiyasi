@@ -1,0 +1,28 @@
+[15:21:40] E1 S0 Qərəzsiz (nəzarət)       DI=1.00 EO=-0.002 profit=0.194
+[15:21:52] E1 S1 Tarixi qərəz             DI=1.00 EO=0.001 profit=0.163
+[15:22:04] E1 S2 Ölçmə qərəzi             DI=0.59 EO=0.236 profit=0.180
+[15:22:19] E1 S3 Təmsil qərəzi            DI=1.01 EO=-0.005 profit=0.194
+[15:22:36] E1 S4 Proksi + tarixi qərəz    DI=0.19 EO=0.408 profit=0.141
+[15:22:49] E1 S5 Birgə (real ssenari)     DI=0.27 EO=0.387 profit=0.167
+[15:23:05] E2 Qrup daxil                 DI=0.12 EO=0.485
+[15:23:21] E2 Qrupsuz (unawareness)      DI=0.27 EO=0.387
+[15:23:35] E2 Qrupsuz + proksi silinib   DI=0.65 EO=0.169
+[15:23:35] E2 qrup əlamətlərdən AUC=0.975 ilə bərpa olunur
+[15:23:47] E3 B qrupunun 33.3%-i A qrupunda olsaydı təsdiq alardı
+[15:23:48] E4 Baza: LR (qrup daxil)          DI=0.32 EO=+0.358 profit=0.181 auc=0.736 (2s)
+[15:24:00] E4 Baza: GBM (qrupsuz)            DI=0.27 EO=+0.387 profit=0.167 auc=0.731 (11s)
+[15:24:12] E4 Reweighing + GBM               DI=0.65 EO=+0.167 profit=0.182 auc=0.741 (13s)
+[15:24:40] E4 ExpGrad (DP) + LR              DI=0.97 EO=+0.014 profit=0.189 auc=0.661 (28s)
+[15:25:13] E4 ExpGrad (EO) + LR              DI=0.97 EO=+0.014 profit=0.189 auc=0.662 (33s)
+[15:25:25] E4 Qrup üzrə hədd (EO) + GBM      DI=0.96 EO=+0.020 profit=0.180 auc=0.731 (12s)
+[15:25:35] E4 Oracle: GBM (həqiqi etiketlə)  DI=0.92 EO=+0.045 profit=0.192 auc=0.743 (10s)
+[15:26:14] E5 Baza: GBM (qrupsuz)      EO: 1-ci dövr +0.369 → 10-cu dövr +0.244
+[15:27:00] E5 Qrup üzrə hədd (EO)      EO: 1-ci dövr +0.067 → 10-cu dövr +0.038
+[15:27:44] E5 Baza + 10% kəşfiyyat     EO: 1-ci dövr +0.332 → 10-cu dövr +0.185
+[15:27:48] E6 Bütün əlamətlər | LR                          AUC=0.781 DI(gənc)=0.59 DI(qadın)=0.78
+[15:28:05] E6 Bütün əlamətlər | GBM                         AUC=0.789 DI(gənc)=0.53 DI(qadın)=0.84
+[15:29:02] E6 Bütün əlamətlər | ExpGrad (EO, yaş) + LR      AUC=0.697 DI(gənc)=0.84 DI(qadın)=0.89
+[15:29:05] E6 Yaş və cins çıxarılıb | LR                    AUC=0.779 DI(gənc)=0.67 DI(qadın)=0.99
+[15:29:22] E6 Yaş və cins çıxarılıb | GBM                   AUC=0.792 DI(gənc)=0.69 DI(qadın)=0.95
+[15:30:15] E6 Yaş və cins çıxarılıb | ExpGrad (EO, yaş) + LR AUC=0.705 DI(gənc)=0.84 DI(qadın)=1.05
+[15:30:15] Hazırdır: 529 s
